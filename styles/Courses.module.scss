@@ -1,0 +1,241 @@
+$letter: rgb(17, 131, 197);
+$yellow: #fe6f00;
+
+.Link {
+    text-decoration: none;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.Coursecontainer {
+    margin-bottom: 0rem;
+    display: flex;
+    justify-content: center;
+
+    h3 {
+        text-align: left;
+        padding-left: 1.6rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        color: $letter;
+
+        a {
+            text-decoration: none;
+            color: $letter;
+            font-size: 1rem;
+        }
+    }
+
+
+
+    p {
+        line-height: 1.4rem;
+        margin: 0.2rem 0 0.7rem 0;
+        color: rgb(110, 108, 108);
+        font-size: 0.9rem;
+    }
+
+}
+
+.figure:hover .imgoverlay {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.figure {
+    // border-radius: 6%;
+    background-color: #dde4e7;
+    margin: auto;
+    width: 100%;
+    height: 11rem;
+    // transition: all 0.5s;
+    overflow: hidden;
+}
+
+.Coursecard {
+    // transition: 0.5s;
+}
+
+.Coursecard:hover {
+    // transform: translateY(-50px);
+    // box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+
+.Courseimg {
+    // position: relative;
+    width: 100%;
+    height: 11rem;
+    transition: all 0.5s;
+}
+
+.Coursecard {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    width: 26%;
+    margin: 1rem 1.5rem;
+    padding-bottom: 1.5rem;
+    border-radius: 7px;
+
+    .text {
+        padding: 0 1.7rem;
+
+        p {
+            text-align: left;
+            margin: 0rem 0;
+        }
+
+        div {
+            margin-top: 0.7rem;
+
+            a {
+                font-size: 1rem;
+                color: rgb(8, 45, 212);
+                // float: right;
+            }
+        }
+
+
+        .durationicon {
+            position: relative;
+            top: 0.4rem;
+            padding: 0rem 0.4rem 0rem 0rem;
+            font-size: 1.5rem;
+        }
+
+        .read {
+            // margin: 0 4.5rem;
+            display: flex;
+            justify-content: left;
+            align-items: left;
+
+            .readbtn {
+                border-radius: 5px;
+                // background-color: hsl(204.06deg 86.32% 45.88%);
+                // background-color: rgb(237 153 38);
+                background-color: rgb(105 117 135);
+                width: 8rem;
+                height: 2rem;
+                outline: none;
+
+                border: 0px solid hsl(204.06deg 86.32% 45.88%);
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 0.9rem;
+                }
+
+
+
+            }
+
+
+        }
+
+    }
+
+    .rating {
+        div {
+            padding-left: 1.5rem;
+            text-align: left;
+        }
+
+    }
+}
+
+.Coursecard:hover {}
+
+.Courseicon {
+    color: rgb(212, 143, 14);
+    padding: 1px;
+}
+
+// ================================== Mobile =====================================
+
+
+@media only screen and (max-width:1132px) {
+    .Coursecard {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width:914px) {
+    .Coursecontainer {
+        // display: flex;
+        flex-wrap: wrap;
+
+        h3 {
+            width: 100%;
+            margin-top: 0.7rem;
+            text-align: left;
+            padding: 0 0.7rem;
+        }
+
+        .Coursecard {
+            margin: 1rem 0.5rem;
+            width: 46%;
+            height: 27.9rem;
+
+            .figure {
+                height: 12rem;
+
+                .blogimg {
+                    height: 8rem;
+                }
+            }
+
+            .rating {
+                text-align: left;
+                padding: 0 0.7rem;
+
+                div {
+                    padding-left: 0;
+                }
+            }
+
+            .text {
+                padding: 0 0.7rem;
+
+                p {
+                    font-size: 1rem;
+                    line-height: 1.6rem;
+                    margin: 0.2rem 0 0.5rem 0;
+                }
+
+                .durationicon {
+                    font-size: 1.5rem;
+                    position: relative;
+                    top: 0.4rem;
+                }
+
+                .read {
+                    .readbtn {
+
+                        width: 6rem;
+                        height: 1.5rem
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+@media only screen and (max-width:616px) {
+    .Coursecontainer {
+        .Coursecard {
+            width: 76%;
+            height: auto;
+
+
+            // .rating{
+            //     div{
+            //         padding-left: 0;
+            //     }
+            // }
+        }
+    }
+}
